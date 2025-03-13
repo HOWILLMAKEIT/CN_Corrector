@@ -15,8 +15,7 @@ def split_sentences(text):
     # 获取句子并删除每个句子中的空格和双引号
     return [sent.text.strip().replace(' ', '').replace('“', '').replace('”', '').lower() for sent in doc.sents]
  
-long_text = """
-能花时间再这个项目上的也是神人了
+long_text = """你找到你最喜欢的工作，我也很高心
 """
 sentences = split_sentences(long_text)
 
