@@ -13,7 +13,7 @@
 随后打开命令行运行
 
 ```
-docker run 您的用户名/app-name:标签
+docker run howillmakeit/cncorrector:v1
 ```
 
 打开vscode，安装Dev Containers插件，随后按F1，输入：
@@ -41,7 +41,7 @@ error_sentences = [
 
 对于专业性较高的文本，例如计算机网络课本，纠错效果一般
 
-适用于平时的小论文/演讲稿的纠错
+**适用于平时的小论文/演讲稿的纠错**
 
 例如我将我大一写的习概论文（大约3000字）直接喂给模型，得到的输出如下：
 
