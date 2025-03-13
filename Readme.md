@@ -13,7 +13,7 @@
 随后打开命令行运行
 
 ```
-docker run howillmakeit/cncorrector:v1
+docker run -dit howillmakeit/cncorrector:v1
 ```
 
 打开vscode，安装Dev Containers插件，随后按F1，输入：
@@ -22,7 +22,7 @@ docker run howillmakeit/cncorrector:v1
 Dev containers: Attach to Running container
 ```
 
-选择正在运行的容器，随后就可以在左侧看到cncorrector.py文件，文件中包含了一个我的测试案例（我的习概论文），可以直接运行检查是否缺少环境。
+选择正在运行的容器，打开root文件夹，随后就可以在左侧看到test.py文件，文件中包含了一个我的测试案例（我的习概论文），可以直接运行检查是否缺少环境。
 
 在cncorrector.py文件中，将long_text字符串的值替换为你的待检测文本即可运行。
 
