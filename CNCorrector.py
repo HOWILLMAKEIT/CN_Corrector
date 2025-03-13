@@ -12,7 +12,7 @@ def split_sentences(text):
     # 预处理文本，移除换行符和制表符
     text = text.replace('\n', '').replace('\t', '')
     doc = nlp(text)
-    # 获取句子并删除每个句子中的空格和双引号
+    # 删除中文双引号，删除空格，将大写字母改为小写（实测这些会影响检测效果）
     return [sent.text.strip().replace(' ', '').replace('“', '').replace('”', '').lower() for sent in doc.sents]
  
 long_text = """你找到你最喜欢的工作，我也很高心
@@ -36,7 +36,6 @@ if __name__ == '__main__':
             # 进行纠错
             correct_sent, err = m.macbert_correct(line)
             if err!= []:
-                # 打印结果
                 print('-----------------------------------------********************------------------------')
                 print("原文: {}".format(line))
                 print("纠正: {}".format(correct_sent))
