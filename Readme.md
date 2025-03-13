@@ -24,7 +24,7 @@ Dev containers: Attach to Running container
 
 选择正在运行的容器，打开root文件夹，随后就可以在左侧看到test.py文件，文件中包含了一个我的测试案例（我的习概论文），可以直接运行检查是否缺少环境。
 
-在cncorrector.py文件中，将long_text字符串的值替换为你的待检测文本即可运行。
+在test.py文件中，将long_text字符串的值替换为你的待检测文本即可运行。
 
 如果你的文本已经做好了分句，也可以直接替换error_sentences字符串的值，注意格式类似：
 
